@@ -13,7 +13,6 @@ def mse(y: np.ndarray, yhat: np.ndarray) -> float:
     """
     # TODO: diff ** 2 elementwise, then .mean() over the whole batch.
     n = y - yhat
-
     square = n ** 2 
 
     return (square).mean()
